@@ -6,7 +6,7 @@
 /*   By: alejhern <alejhern@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 11:22:46 by alejhern          #+#    #+#             */
-/*   Updated: 2024/04/02 14:02:14 by alejhern         ###   ########.fr       */
+/*   Updated: 2024/04/07 19:48:24 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strstr(char *str, char *to_find)
 	while (str[i])
 	{
 		j = 0;
-		while (str[i + j] == to_find[j])
+		while (to_find[j] && str[i + j] == to_find[j])
 			j++;
 		if (to_find[j] == 0)
 			return (&str[i]);
